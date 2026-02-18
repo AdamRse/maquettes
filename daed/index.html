@@ -3,18 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-primary: #000000;
-        --color-primary-content: #ffffff; 
+        --color-primary-content: #c8d0e0; 
         --color-secondary: #391f57;
         --color-secondary-content: #d9c7ee;
+        
+        --font-title: "Rubik Microbe", system-ui;
+        --font-main: "Inter", sans-serif;
+        --font-adam: "Comforter", cursive;
+        --font-dev: "Bruno Ace SC", sans-serif;
       }
     </style>
     <title>D'Adam et dev</title>
 </head>
-<body class="bg-primary text-primary-content">
-    coucou
+<body class="bg-primary text-primary-content p-5 font-main">
+  <!-- Overlay video -->
+  <div>
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+      <source src="./assets/videos/stars.mp4" type="video/mp4">
+    </video>
+    <div class="bg-primary/50 absolute top-0 left-0 w-full h-full object-cover -z-1"></div>
+  </div>
+
+  <header>
+    <nav class="pt-20 pb-5 px-10 flex items-center justify-between">
+      <div class="flex items-center gap-2 cursor-pointer">
+        <svg class="fill-current text-primary-content w-5 h-5"> 
+          <use xlink:href="./assets/icons/menu.svg#menu-icon"></use>
+        </svg>
+        
+        <span class="text-xl font-bold">menu</span>
+      </div>
+    </nav>
+    <div class="text-right px-5">
+      <span class="font-adam text-5xl">D'Adam & </span><span class="font-dev text-3xl">DEV'</span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      Section 1
+    </section>
+    <section>
+      Section 2
+    </section>
+  </main>
+
+  <footer>
+    Footer
+  </footer>
 </body>
 </html>

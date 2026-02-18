@@ -1,0 +1,20 @@
+<svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current text-primary-content">
+    <symbol id="**ID**" viewBox="0 -0.5 21 21">
+    <title>Menu</title>
+    <desc>Open the menu</desc>
+    <g stroke="none" stroke-width="1">
+        <g transform="translate(-139, -200)">
+            <g transform="translate(56, 160)"> 
+                <path d="M101.9,57.009 C101.9,57.56 1">
+                </path>
+            </g>
+        </g>
+        </g>
+    </symbol>
+</svg>
+
+-------------------------------------------
+
+<svg class="fill-current text-primary-content w-10 h-10"> 
+    <use xlink:href="./assets/icons/menu.svg#**ID**"></use>
+</svg>
