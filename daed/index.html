@@ -1,85 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+        <!-- Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet"> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,900;1,900&display=swap"
+            rel="stylesheet"
+        />
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-primary: #000000;
-        --color-primary-content: #c8d0e0; 
-        --color-secondary: #391f57;
-        --color-secondary-content: #d9c7ee;
-        
-        --font-title: "Rubik Microbe", system-ui;
-        --font-main: "Inter", sans-serif;
-        --font-adam: "Comforter", cursive;
-        --font-dev: "Bruno Ace SC", sans-serif;
-        --font-dot: "Archivo", sans-serif;
-      }
-    </style>
-    <title>D'Adam et dev</title>
-</head>
-<body class="bg-primary text-primary-content p-5 font-main">
-  <!-- Overlay video -->
-  <div>
-    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover -z-10">
-      <source src="./assets/videos/stars.mp4" type="video/mp4">
-    </video>
-    <div class="bg-primary/50 fixed top-0 left-0 w-full h-full object-cover -z-1"></div>
-  </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+            @theme {
+                --color-primary: #000000;
+                --color-primary-content: #c8d0e0;
+                --color-secondary: #391f57;
+                --color-secondary-content: #d9c7ee;
 
-  <header class="py-10 px-10 h-screen">
-    <nav class="pt-10 pb-5 flex items-center justify-between">
-      <!-- Menu button -->
-      <div class="flex items-center gap-2 cursor-pointer">
-        <svg class="fill-current text-primary-content w-5 h-5"> 
-          <use xlink:href="./assets/icons/menu.svg#menu-icon"></use>
-        </svg>
-        <span class="text-xl font-bold">menu</span>
-      </div>
-      <div>
-        <span class="font-dev text-xl">D'Adam & DEV'</span>
-      </div>
-    </nav>
-    <div class="flex justify-center pt-5">
-      <div class="border-b w-2/3 center"></div>
-    </div>
-    <section class="pt-20 h-full flex flex-col justify-center">
-      <div class="mb-20 font-bold text-5xl leading-relaxed text-shadow-lg text-shadow-primary">
-        Indépendance<span class="font-dot">.</span> performance<span class="font-dot">.</span> adaptabilité<span class="font-dot text-shadow-primary-content">.</span>
-      </div>
-      <div class="mb-48 text-xl text-justify">
-        Nous créons votre site web, avec des technologies <span class="font-bold">open source</span> et des infrastructures
-        <span class="font-bold ">
-          <span class="text-blue-800">Fra</span><span class="text-white-800">nça</span><span class="text-red-800">ises</span>
-        </span>
-        pour assurer votre indépendance sur le long terme.
-      </div>
-    </section>
-  </header>
+                --font-title: "Rubik Microbe", system-ui;
+                --font-main: "Inter", sans-serif;
+                --font-adam: "Comforter", cursive;
+                --font-dev: "Bruno Ace SC", sans-serif;
+                --font-dot: "Archivo", sans-serif;
+            }
+        </style>
+        <title>D'Adam et dev</title>
+    </head>
+    <body class="bg-primary text-primary-content p-5 font-main">
+        <!-- Overlay video -->
+        <div>
+            <video
+                autoplay
+                muted
+                loop
+                class="absolute top-0 left-0 w-full h-full object-cover -z-10"
+            >
+                <source src="./assets/videos/stars.mp4" type="video/mp4" />
+            </video>
+            <div
+                class="bg-primary/50 fixed top-0 left-0 w-full h-full object-cover -z-1"
+            ></div>
+        </div>
 
-  <main>
-    <section>
-      Section 1
-    </section>
-    <section>
-      Section 2
-    </section>
-  </main>
+        <header class="py-10 px-10 h-screen">
+            <nav class="pt-10 pb-5 flex items-center justify-between">
+                <!-- Menu button -->
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <svg class="fill-current text-primary-content w-5 h-5">
+                        <use
+                            xlink:href="./assets/icons/menu.svg#menu-icon"
+                        ></use>
+                    </svg>
+                    <span class="text-xl font-bold">menu</span>
+                </div>
+                <div>
+                    <span class="font-dev text-xl">D'Adam & DEV'</span>
+                </div>
+            </nav>
+            <div class="flex justify-center pt-5">
+                <div class="border-b w-2/3 center"></div>
+            </div>
+            <section class="pt-20 h-full flex flex-col justify-center">
+                <div
+                    class="mb-20 font-bold text-5xl leading-relaxed text-shadow-lg text-shadow-primary"
+                >
+                    Indépendance<span class="font-dot">.</span> performance<span
+                        class="font-dot"
+                        >.</span
+                    >
+                    adaptabilité<span
+                        class="font-dot text-shadow-primary-content"
+                        >.</span
+                    >
+                </div>
+                <div class="mb-48 text-xl text-justify">
+                    Nous créons votre site web, avec des technologies
+                    <span class="font-bold">open source</span> et des
+                    infrastructures
+                    <span class="font-bold">
+                        <span class="text-blue-800">Fra</span
+                        ><span class="text-white-800">nça</span
+                        ><span class="text-red-800">ises</span>
+                    </span>
+                    pour assurer votre indépendance sur le long terme.
+                </div>
+            </section>
+        </header>
 
-  <footer>
-    Footer
-  </footer>
-</body>
+        <main>
+            <section>Section blabla</section>
+
+            <section>Section 2</section>
+        </main>
+
+        <footer>Footer</footer>
+    </body>
 </html>
